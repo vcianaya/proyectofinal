@@ -1,0 +1,67 @@
+.a {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: rgba(254,182,69,1);
+  background: -moz-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,182,69,1)), color-stop(54%, rgba(241,231,103,1)), color-stop(100%, rgba(241,231,103,1)));
+  background: -webkit-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: -o-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: -ms-linear-gradient(left, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  background: linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(241,231,103,1) 54%, rgba(241,231,103,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb645', endColorstr='#f1e767', GradientType=1 );
+  border:1px solid #ccc;
+  width: 300px;
+  padding: 3px 6px 3px 6px;
+}
+.botones {
+  background-color: #C4C0C0; 
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border: 1px solid #706D6D;
+  color: #302E2E;
+  cursor: pointer;
+  font-size: 8px;
+  font-family:"Lucida Grande",Tahoma,Verdana,sans-serif;
+  font-weight: bolder;
+  padding: 2px 5px 2px 5px;
+  text-align: center;   
+}
+
+.lblnombre{
+  font-size: 11px;
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  
+}
+
+.txtcampo{
+  width: 200px;
+  height: 15px;
+  border: 1px solid #928E8E;
+  font-size: 8px;
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  padding:3px;
+  border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><title>Agenda Contactos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+  <body>
+<table>
+<form method="post" action="guardarContacto">
+    <tr>
+        <td><label for="nombres" class="lblnombre">Nombres:</label></td>
+        <td><input type="text" id="nombres"  class="txtcampo"  name="agenda[nombres]" value="<%= agenda.nombres %>"></td>
+    </tr>
+     <tr>
+    <td><label for="apellidoPaterno" class="lblnombre">Apellido Paterno:</label></td>
+    <td><input type="text" id="apellidoPaterno" class="txtcampo" name="agenda[apellidoPaterno]" value="<%= agenda.apellidoPaterno %>"></td>    
+    </tr>
+    <tr>
+    <td><label for="apellidoMaterno" class="lblnombre">Apellido Materno:</label></td>
+    <td><input type="text" id="apellidoMaterno" class="txtcampo"  name="agenda[apellidoMaterno]" value="<%= agenda.apellidoMaterno %>"></td>    
+    </tr>
+    <tr>
+    <td><label for="telefonoPersonal" class="lblnombre">Telefono Personal:</label></td>
+    <td><input type="text" id="telefonoPersonal"  class="txtcampo" name="agenda[telefonoPersonal]" value="<%= agenda.telefonoPersonal %>"></td>    
+    </tr>
+    <tr>
+    <td><label for="telefonoDomicilio" class="lblnombre">Telefono Domicilio:</label></td>
+    <td><input type="text" id="telefonoDomicilio" class="txtcampo" name="agenda[telefonoDomicilio]" value="<%= agenda.telefonoDomicilio %>"></td>    
+    </tr>
+    <tr>
+    <td><label for="cumpleanos" class="lblnombre">Cumpleaños</label></td>
+    <td><input type="text" id="cumpleanos"  class="txtcampo" name="agenda[cumpleanos]" value="<%= agenda.cumpleanos %>"></td>
+    </tr>   
+    <tr>
+    <td colspan="2" style="text-align: center; padding:10px 0px 10px 0px; "><input type="submit" name="envio" value="Registrar Contacto" class="botones"></td>
+    </tr>
+</table>
+  </body>
+</html>
