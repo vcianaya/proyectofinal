@@ -18,11 +18,11 @@ sequelize.sync().success (function(){
         //preguntamos si la tabla esta vacia
         if(count===0){
          Contacto.create({
-            nombres: "Ejemplo Nombre",
-         apellidoPaterno: "Ejemplo Paterno",
-         apellidoMaterno: "Ejemplo Materno",
-         telefonoPersonal: 0,
-         telefonoDomicilio: 0,
+            nombres: "VICTOR",
+         apellidoPaterno: "ANAYA",
+         apellidoMaterno: "MAMANI",
+         telefonoPersonal: 3242340,
+         telefonoDomicilio: 0423423,
          cumpleanos: new Date()                    
             }).success(function(){
                console.log("Agenda inicializada")

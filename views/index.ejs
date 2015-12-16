@@ -1,10 +1,11 @@
 
 La pagina donde puede registrar contactos...
-<table>
+<table border="solid">
 <% var i; for(i=0; i< contactos.length; i++) 
 { %>
-<tr><td><%= i %></td><td><%= contactos[i].nombres %></td></tr>   
-<% } %>
+<tr><td><%= i %></td><td><%= contactos[i].nombres %>&nbsp &nbsp<%= contactos[i].apellidoPaterno %>&nbsp &nbsp<%= contactos[i].apellidoMaterno%>&nbsp &nbsp<%= contactos[i].telefonoPersonal %>&nbsp &nbsp<%= contactos[i].telefonoDomicilio %>&nbsp &nbsp<%= contactos[i].apellidoPaterno %>&nbsp &nbsp<%= contactos[i].cumpleaños %></td></tr>   
+<% }
+ %>
 </table>
 
 

@@ -1,5 +1,7 @@
 var models = require('../models/model.js');
 
+
+
 exports.registroContacto = function (req, res){
 	var agenda = models.Contacto.build({ nombres: "Nombre",
 									apellidoPaterno: "Paterno",
@@ -14,8 +16,13 @@ exports.registroContacto = function (req, res){
 exports.respuestaContacto = function (req, res){
 	res.render('respuestaContacto', {mensaje:'Se registro el contacto'});
 }
+
+
 exports.guardarContacto = function(req, res){
-  console.log("ingresa a guardar");
+  console.log("ingresa a guardar"+req.body.contacto);
+  var contacto = models.Contacto.build({
+    //nombres: req.body.contacto.nombres
+  });
   var contacto = models.Contacto.build (req.body.contacto);
     //a continuacion guardamos los campos que recibimos del formulario
     contacto.save ({fields:["nombres",
@@ -26,6 +33,7 @@ exports.guardarContacto = function(req, res){
                 "cumpleanos"
                 ]
            }).then(function(){
+            console.log(nombres);
             console.log("ingresa a redirecr");
             res.render('respuestaContacto', {mensaje:'Se registro el contacto con exito'});
            });    
