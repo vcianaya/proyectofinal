@@ -18,7 +18,7 @@ sequelize.sync().success (function(){
         //preguntamos si la tabla esta vacia
         if(count===0){
          Contacto.create({
-            nombres: "VICTOR",
+         nombres: "javier",
          apellidoPaterno: "ANAYA",
          apellidoMaterno: "MAMANI",
          telefonoPersonal: 3242340,

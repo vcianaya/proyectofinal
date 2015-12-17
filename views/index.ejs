@@ -1,11 +1,35 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><title>contacto Contactos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+  <body>
+
 La pagina donde puede registrar contactos...
 <table border="solid">
+<tr>
+<td>ID</td>
+<td>Nombre</td>
+<td>PATERNO</td>
+<td>MATERNO</td>
+<td>TELEFONO PERSONAL</td>
+<td>TELEFONO DOMICILIO</td>
+<td>CUMPLEAÑOS</td>
+</tr>
 <% var i; for(i=0; i< contactos.length; i++) 
 { %>
-<tr><td><%= i %></td><td><%= contactos[i].nombres %>&nbsp &nbsp<%= contactos[i].apellidoPaterno %>&nbsp &nbsp<%= contactos[i].apellidoMaterno%>&nbsp &nbsp<%= contactos[i].telefonoPersonal %>&nbsp &nbsp<%= contactos[i].telefonoDomicilio %>&nbsp &nbsp<%= contactos[i].apellidoPaterno %>&nbsp &nbsp<%= contactos[i].cumpleaños %></td></tr>   
+<tr><td><%= i %></td><td><%= contactos[i].nombres %></td>
+<td><%= contactos[i].apellidoPaterno %></td>
+<td><%= contactos[i].apellidoMaterno %></td>
+<td><%= contactos[i].telefonoPersonal %></td>
+<td><%= contactos[i].telefonoDomicilio %></td>
+<td><%= contactos[i].cumpleanos %></td>
+</tr>   
 <% }
  %>
 </table>
-
-
+</body>
+</html>

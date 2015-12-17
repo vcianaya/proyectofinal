@@ -7,5 +7,5 @@ router.get('/', contacto.index);
 
 router.get('/registroContacto', contacto.registroContacto);
 router.get('/respuestaContacto', contacto.respuestaContacto);
-router.get('/guardarContacto', contacto.guardarContacto);
+router.post('/guardarContacto', contacto.guardarContacto);
 module.exports = router;
